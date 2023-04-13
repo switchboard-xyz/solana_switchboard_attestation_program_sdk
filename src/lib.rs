@@ -78,6 +78,10 @@ impl QuoteAccountData {
         }
         Ok(())
     }
+
+    pub fn size() -> usize {
+        std::mem::size_of::<QuoteAccountData>()
+    }
 }
 
 #[derive(Eq, PartialEq)]
